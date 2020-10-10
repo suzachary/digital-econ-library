@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--imports-->
+        <script src="vis.js"></script>
+        <script src="index.js"></script>
+        <link href="vis.css" rel="stylesheet" type="text/css" />
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Digital Economics Library</h1>
+
+        <!--buttons-->
+        <button onclick="openKeynesian()">Keynesian Economics</button>
+        <button onclick="openNeoclassical()">Neoclassical Economics</button>
+        <button onclick="openSupplySide()">Supply-Side Economics</button>
+
+        <div id="Keynesian">
+            <h2>Keynesian Economics</h2>
+            <p>Keynesian economics states that economic output is strongly influenced by the total amount of demand in an economy. As such, Keynesian economists generally recommend that during recessions, the government should decrease taxes and increase spending in order to generate greater total demand.</p>
+
+            <h3>Phillips Curve</h3>
+            <p>The Phillips Curve is a curve demonstrating the fact that higher rates of inflation are correlated with lower rates of unemployment. The idea is that if unemployment becomes lower, then the employees gain more bargaining power (as the employers must compete harder for employees). This bargaining power results in higher wages, causing inflation.</p>
+
+            <p>Move this slider to change the unemployment rate.</p>
+            <div class="slidecontainer">
+                <input type="range" min="4.00" max="6.00" value="5.00" class="slider" step="0.01" id="myRange">
+            </div>
+            <div id="demo" class="visgraph"></div>
+            <div id="PhillipsAxisLabel" style="text-align: center; width: 80%">
+                <p>Unemployment (percentage)</p>
+                <table style="width: 100%; border: 0ch">
+                    <tr>
+                        <td style="text-align: left; border: 0ch">4.0%</td>
+                        <td style="text-align: center; border: 0ch">5.0%</td>
+                        <td style="text-align: right; border: 0ch">6.0%</td>
+                    </tr>
+                </table> 
+            </div>
+
+
+            <h3>Liquidity Trap OR Sticky Wages OR relationship between wages and employment</h3>
+        </div>
+ 
+        <div id="Neoclassical">
+            <h2>Classical Economics</h2>
+            <p>Classical economics is an economic school of thought based off of Enlightenment-era philosophes such as Adam Smith or David Ricardo. Classical economics views the economy as a self-regulating system governed by the "Invisible Hand," or a set of scientific/mathematical laws that affect supply, demand, price, and more. Classical economists typically advocate for a free market.</p>
+
+            <h3>Pareto Principle</h3>
+            <p>The Pareto Principle is the idea that approximately 20% of a given X will be responsible for 80% of a given Y. Here we see it applied to wealth in the United States. A small percentage of all people in the United States possess the majority of the wealth.</p>
+
+            <p>Move this slider to change the top percentile of the nation examined.</p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" step="1" id="myRange2">
+            </div>
+            <div id="demo2" class="visgraph"></div>
+
+            <h3>Comparative Advantage</h3>
+            <p>Comparative advantage is the principle that states that in a system of free trade (no tariffs or trade restrictions) that a country will naturally specialize in what they are more efficient in producing.</p>
+            <p>To see why this is the case, imagine that our country (A) can produce one pen per hour, but can produce two pencils in one hour. We are more efficient at producing pencils than we are at pens. Now imagine that our neighboring country (B) can produce two pens in one hour, but only one pencil in an hour.</p>
+            <p>Let's say that these two countries are willing to trade at a rate of one pen for one pencil.</p>
+            <p>If our country trades one pencil for one pen, this is a great deal for us because normally in order to obtain one pen, we would be sacrificing one hour, and therefore the ability to produce two pencils in that time.</p>
+            <p>If the other country trades one pen for one pencil, this is a great deal for them as well because normally in order to obtain one pencil, they would need to sacrifice one hour, and therefore the ability to produce two pens in that time.</p>
+            <p>Use the sliders to below to see how many pens and pencils each country will have after 12 hours of work (assume trade takes no time). One line shows how many pens the country has for a certain number of pencils. The other lines shows how many pens the country has if they specialize in pencils and afterwards trade pencils in for pens, or if they specialize in pens and afterwards trade pencils in for pens (depending on which the country is more efficient at making).</p>
+
+            <p>Move this slider to see how many pencils and pens our country has.</p>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="24" value="12" class="slider" step="1" id="countryA">
+            </div>
+            <div id="demoA" class="visgraph2"></div>
+            <div id="labelA" style="text-align: center; width: 80%">
+                <p>Pencils</p>
+            </div>
+
+            <p>Move this slider to see how many pencils and pens the other country has.</p>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="24" value="12" class="slider" step="2" id="countryB">
+            </div>
+            <div id="demoB" class="visgraph2"></div>
+            <div id="labelB" style="text-align: center; width: 80%">
+                <p>Pencils</p>
+            </div>
+        </div>
+
+        <div id="SupplySide">
+            <h2>Supply-Side Economics</h2>
+            <p>Supply-side economics views the economy as primarily driven by supply rather than demand. They advocate for a reduction of taxes and typically a free market approach.</p>
+
+            <h3>Laffer Curve</h3>
+            <p>The Laffer Curve states that as the government taxes more, the revenue gained from taxation will gradually go up as taxes increase. After a certain point, the revenue will go back down because the excessive taxation is harming the economy.</p>
+            <p>The following extremely simplified example shows the revenue gained from taxing a shop that sells sandwiches for $10 each. As the taxation increases, the store sells less sandwiches, causing the revenue to decrease sharply after the tax rate reaches 20%.</p>
+
+            <p>Move this slider to change the rate of taxation.</p>
+            <div class = "slidecontainer">
+                <input type="range" min="0" max="100" value="50" class="slider" step="5" id="myRange3">
+            </div>
+            <div id="demo3" class="visgraph2"></div>
+            <div id="LafferAxis" style="text-align: center; width: 80%">
+                <p>Sales Tax Rate (percentage)</p>
+            </div>
+
+            <h3>Vertical Supply Curve</h3>
+            <h1> THIS IS WRONG </h1>
+            <p>Supply-side economists believe that the supply curve is nearly vertical.</p>
+
+            <p>Move the slider below to see what happens to price as output changes with traditional supply curves</p>
+            <div class = "slidecontainer">
+                <input type="range" min="0" max="100" value="50" class="slider" step="1" id="myRange4">
+            </div>
+            <div id="demo4" class="visgraph3"></div>
+            <div id="StandardAxis" style="text-align: center; width: 50%">
+                <p>Output</p>
+            </div>
+
+            <p>Move the slider below to see what happens to price as output changes with the supply-side vertical supply curve.</p>
+            <p>Notice how much greater the price changes when the supply shifts.</p>
+            <div class = "slidecontainer">
+                <input type="range" min="0" max="100" value="50" class="slider" step="1" id="myRange5">
+            </div>
+            <div id="demo5" class="visgraph3"></div>
+            </div>
+            <div id="SupplyAxis" style="text-align: center; width: 50%">
+                <p>Output</p>
+            </div>
+
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
